@@ -33,6 +33,52 @@
     <link rel='stylesheet' href='css/structure.css'>
     <link rel='stylesheet' href='css/creative2.css'>
     <link rel='stylesheet' href='css/custom.css'>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Raleway|Zilla+Slab&display=swap" rel="stylesheet">
+    <style>
+        p,article{
+            
+            font-family: 'Nanum Myeongjo', serif !important;
+            font-size:15px !important;
+            letter-spacing: 0.5px;
+        }
+        .borRed{
+            border:2px dashed red;
+        }
+        .header-main{
+            font-family: 'Raleway', sans-serif !important;
+            font-weight:bold !important;
+        }
+        .header-sub{
+            font-family: 'Raleway', sans-serif !important;
+        }
+        h1,h2,h3,h4,h5,h6{
+            
+            /* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+font-family: 'Zilla Slab', serif;
+        }
+        #section_frist{
+            background: url('https://images.pexels.com/photos/273230/pexels-photo-273230.jpeg?cs=srgb&dl=arts-build-close-up-commerce-273230.jpg&fm=jpg') !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:cover;
+        }
+       
+
+        @media only screen and (max-width: 600px) {
+            h1,h2,h3,h4,h5,h6{
+                font-size: 37px !important;
+                line-height:50px !important;
+                /* color:red !important; */
+            }
+            body{
+                background-color: orangered !important;
+            }
+          
+            
+        }
+
+    </style>
 
 </head>
 
@@ -87,19 +133,28 @@
             <div class="content_wrapper clearfix">
                 <div class="sections_group">
                     <div class="entry-content">
-                        <div class="section mcb-section" style="padding-top:240px; padding-bottom:150px; background-color:#000080">
+                        <div class="section mcb-section" id="section_frist" style="padding-top:200px; padding-bottom:50px;  ">
                             <div class="section_wrapper mcb-section-inner">
                                 <div class="wrap mcb-wrap one  valign-top clearfix">
                                     <div class="mcb-wrap-inner">
+
                                         <div class="column mcb-column three-fourth column_column ">
                                             <div class="column_attr clearfix">
-                                                <h6>ABOUT US • <span class="creative2_decoration" style="color: #fff; letter-spacing: 2px; font-weight: 300;">Unitech Global Resources</span></h6>
-                                                <h5 style="color: #fff;"><span class="creative2_decoration">At Unitech Global Resources</span> We plan, build, support and manage IT Infrastructure solutions. Helping organizations to assess design and efficiently operate their network, to unlock the full value of  their investment and benefit from greater operational efficiency.
+                                                <div class="column_attr clearfix">
+                                                    <h1 style="color: #fff;"><span class="creative2_decoration">About us</span></h1>
+                                                </div>
+                                                <h3><span class="" style="color: #fff; letter-spacing: 2px; font-weight: 300;">Unitech Global Resources</span></h3>
+                                                <p style="color: #fff;">
+                                                    <span class="">At Unitech Global Resources</span>
+                                                     We plan, build, support and manage IT Infrastructure solutions. 
+                                                     Helping organizations to assess design and efficiently 
+                                                    operate their network, to unlock the full value of  their 
+                                                    investment and benefit from greater operational efficiency.
                                                 <br>
                                                 <br>
                                                     At Unitech Global solutions are tailored to meet your specific requirements; Transmission and Fibre Optics network designs, installation,RF Planning and Optimization, Network Business Consultation, Site Acquisition, Project Management, 
                                                     Civil designs and Site build design and Implementation of Enterprise wide communication networks.
-                                                </h5>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +167,13 @@
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column ">
                                             <div class="column_attr clearfix">
-                                                <h3>What we are Known for</h3>
+                                                <div >
+                                                    <b>
+                                                        <h3 class="header-main">What we are Known for</h3>
+                                                    </b>
+                                                    <div style="width:100px;border:3px solid orange; "></div>
+                                                </div>
+                                                <br>
                                                 <p>
                                                     At Unitech Global we offer products and technology to clients in a diversity of sector including media, oil and gas, maritime, civil society, government, telecom sector and defense.
                                                     UNITECH has been the preferred supplier to her customers, corporate concerns, NGOs and SMEs, etc., due to its round the clock customer support and dedicated, experienced staff.
@@ -142,9 +203,10 @@
                                 </div>
                                 <div class="wrap mcb-wrap two-third  valign-top clearfix" style="padding:0 0 0 7%">
                                     <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one-third column_image ">
+                                        <div class="column mcb-column one-third column_image" >
                                             <div class="image_frame image_item no_link scale-with-grid no_border">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="https://res.cloudinary.com/unitech-global-resource/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1588278258/1_tl9ese.png" alt="home_creative2_about1" width="183" height="183" />
+                                                <div class="image_wrapper">
+                                                    <img class="scale-with-grid" src="https://res.cloudinary.com/unitech-global-resource/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1588278258/1_tl9ese.png" alt="home_creative2_about1" width="183" height="183" />
                                                 </div>
                                             </div>
                                         </div>
@@ -162,10 +224,19 @@
                                         </div>
                                         <div class="column mcb-column three-fourth column_column ">
                                             <div class="column_attr clearfix">
-                                                <h3>What We Do</h3>
-                                                <h6>
+                                                <div >
+                                                    <br><br>
+                                                    <b>
+                                                        <h3 class="header-main">What We Do</h3>
+                                                    </b>
+                                                    <div style="width:100px;border:3px solid orange; "></div>
+                                                </div>
+                                                <br>
+                                                <p>
+                                                    <b>
                                                     We are established profesionals in the Telecom and ICT consultancy and managed services industry with extensive knowledge and experience in providing consistently high level Telecom and ICT support and related services.
-                                                </h6>
+                                                    </b>
+                                                </p>
                                                 <p>
                                                     We have the ability to work with and compliment your existing teams. Thereby helping to extend your in-house capabilities or work as standalone support for your business and act as a complete outsourcing solution.
                                                 </p>
@@ -196,7 +267,10 @@
                                             <div class="column_attr clearfix">
                                                 <h2><span class="creative2_decoration">Meet</span>
 													<br>
-													Our CEO</h2>
+                                                    Our CEO
+                                                </h2>
+                                                <div style="width:100px;border:3px solid orange; "></div>
+                                                
                                                 <hr class="no_line" style="margin: 0 auto 20px;" />
                                                 <p>
                                                     From the terrestrial telecommunication industry. He commenced his career in
@@ -359,7 +433,7 @@
                                         </div>
                                         <div class="column mcb-column three-fourth column_column ">
                                             <div class="column_attr clearfix">
-                                                <h2><span class="creative2_decoration">Companies</span> we've been working with</h2>
+                                                <h3><span class="creative2_decoration">Companies</span> we've been working with</h3>
                                             </div>
                                         </div>
                                     </div>
